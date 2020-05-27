@@ -117,8 +117,8 @@ const Hero = () => {
               </h5>
             </div>
             <div className='overlay'>
-              <form onSubmit={onSubmit}>
-                <input type='hidden' name='lead' value='lead' />
+              <form onSubmit={onSubmit} name='lead'>
+                <input type='hidden' name='form-name' value='lead' />
                 <input
                   type='text'
                   placeholder='Name'
