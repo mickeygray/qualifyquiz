@@ -124,61 +124,26 @@ const Hero = () => {
                 data-netlify='true'
                 data-netlify-honeypot='bot-field'>
                 <input type='hidden' name='form-name' value='contact' />
-                <input
-                  type='text'
-                  placeholder='Name'
-                  name='name'
-                  value={name}
-                  onChange={onChange}
-                />
-                <input
-                  type='email'
-                  placeholder='Email'
-                  name='email'
-                  value={email}
-                  onChange={onChange}
-                />
-                <input
-                  type='text'
-                  placeholder='Phone'
-                  name='phone'
-                  value={phone}
-                  onChange={onChange}
-                />
-                <input
-                  type='text'
-                  placeholder='Tax Debt'
-                  name='debt'
-                  value={debt}
-                  onChange={onChange}
-                />
+                <input type='text' placeholder='Name' name='name' />
+                <input type='email' placeholder='Email' name='email' />
+                <input type='text' placeholder='Phone' name='phone' />
+                <input type='text' placeholder='Tax Debt' name='debt' />
                 <input
                   type='text'
                   placeholder='Tax Years UnFiled'
                   name='years'
-                  value={years}
-                  onChange={onChange}
                 />
                 <input
                   type='text'
                   placeholder='Last Years Income'
                   name='income'
-                  value={income}
-                  onChange={onChange}
                 />
-                <input
-                  placeholder='Credit Score'
-                  type='text'
-                  name='creditscore'
-                  value={creditscore}
-                  onChange={onChange}
-                />
+                <input placeholder='Credit Score' type='text' />
                 <input
                   type='radio'
                   name='employed'
                   value='false'
                   checked={employed === "false"}
-                  onChange={onChange}
                 />{" "}
                 Unemployed{" "}
                 <input
@@ -186,7 +151,6 @@ const Hero = () => {
                   name='employed'
                   value='true'
                   checked={employed === "true"}
-                  onChange={onChange}
                 />{" "}
                 Employed
                 <div>
@@ -194,7 +158,6 @@ const Hero = () => {
                     type='submit'
                     value='Do I qualify'
                     className='btn btn-primary btn-block'
-                    onSubmit={onSubmit}
                   />
                 </div>
               </form>
